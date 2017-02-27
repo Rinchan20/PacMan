@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>65b2e949-8a1a-4156-821e-cbf012fbba9f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PacMan.py</StartupFile>
+    <StartupFile>pacman_main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PacMan.py" />
+    <Compile Include="pacman.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pacman_main.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
