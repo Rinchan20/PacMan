@@ -242,3 +242,4 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /__pycache__/pacman.cpython-35.pyc
+/__pycache__/ghost.cpython-35.pyc

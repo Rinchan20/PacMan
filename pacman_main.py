@@ -3,6 +3,7 @@ import pygame
 from pygame.locals import *
 
 from pacman import PacMan
+from ghost import Ghost
 
 class PacManMain():
 
@@ -28,9 +29,16 @@ class PacManMain():
 
         #Create all sprites and put them into the sprites list
         pacman = PacMan()
+        blinky = Ghost("blinky", "up", pacman, 50, 0)
+        clyde = Ghost("clyde", "down", pacman, 100, 0)
+        inky = Ghost("inky", "up", pacman, 150, 0)
+        pinky = Ghost("pinky", "down", pacman, 200, 0)
 
         all_sprites_list.add(pacman)
-
+        all_sprites_list.add(blinky)
+        all_sprites_list.add(clyde)
+        all_sprites_list.add(inky)
+        all_sprites_list.add(pinky)
         
         while playing:
             for game_event in pygame.event.get():
@@ -38,6 +46,10 @@ class PacManMain():
                     playing = False
 
             #Game logic
+            blinky.ghost_general_presentation()
+            clyde.ghost_general_presentation()
+            inky.ghost_general_presentation()
+            pinky.ghost_general_presentation()
             all_sprites_list.update()
 
             #Draw all the sprites at once

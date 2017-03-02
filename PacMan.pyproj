@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ghost.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pacman.py">
       <SubType>Code</SubType>
     </Compile>
